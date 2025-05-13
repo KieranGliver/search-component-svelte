@@ -1,6 +1,13 @@
 {
-	"name": "generic-svelte-fuzzy-search-component",
+	"name": "svelte-generic-fuzzy-search-component",
+	"description": "A reusable Svelte component for fuzzy searching using Fuse.js.",
 	"version": "0.0.1",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KieranGliver/generic-svelte-fuzzy-search-component.git"
+	},
+	"author": "KieranGliver",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
@@ -55,6 +62,10 @@
 		"vite": "^6.2.6"
 	},
 	"keywords": [
-		"svelte"
+		"svelte",
+		"fuzzy search",
+		"component",
+		"fuse.js",
+		"search"
 	]
 }
