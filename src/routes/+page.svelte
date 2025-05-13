@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { SearchBar, type SearchResult } from '$lib/index.js';
+	import { type SearchResult } from '$lib/interfaces.js';
+	import { SearchBar } from '$lib/index.js';
 
 	type Person = {
 		name: string;

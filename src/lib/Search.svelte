@@ -1,13 +1,12 @@
 <script lang="ts" generics="T">
 	import Fuse from 'fuse.js/basic';
-	import { type ComponentOptions } from './interfaces.js';
+	import { type ComponentOptions, type SearchResult } from './interfaces.js';
 	import { validateOptions } from './utils.js';
-	import { type SearchResult } from './index.js';
 
 	interface Props {
 		data: readonly T[];
 		keys: string[];
-		handleSelect?: (item: SearchResult<T>) => void;
+		handleSelect?: (result: SearchResult<T>) => void;
 		options?: Partial<ComponentOptions>;
 	}
 

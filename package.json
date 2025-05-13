@@ -7,7 +7,13 @@
 		"type": "git",
 		"url": "https://github.com/KieranGliver/svelte-search-component.git"
 	},
-	"author": "KieranGliver",
+	"bugs": {
+		"url": "https://github.com/kierangliver/svelte-search-component/issues"
+	},
+	"author": {
+		"name": "KieranGliver",
+		"url": "https://github.com/kierangliver"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
@@ -31,9 +37,21 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"exports": {
+		"./package.json": "./package.json",
+		"./Search.svelte": {
+			"types": "./dist/Search.svelte.d.ts",
+			"svelte": "./dist/Search.svelte",
+			"default": "./dist/Search.svelte"
+		},
+		"./interfaces": {
+			"types": "./dist/interfaces.d.ts",
+			"svelte": "./dist/interfaces.js",
+			"default": "./dist/interfaces.js"
+		},
 		".": {
 			"types": "./dist/index.d.ts",
-			"svelte": "./dist/index.js"
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
 		}
 	},
 	"peerDependencies": {
