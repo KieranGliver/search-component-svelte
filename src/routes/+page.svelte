@@ -76,18 +76,21 @@
 			options={componentOptions}
 		/>
 	</div>
-		<div class="flex w-full max-w-2xl flex-col gap-2 rounded-md border-2 bg-gray-300 p-6">
-			<h2 class="font-semibold">Selected Result:</h2>
-			{#if searchResult}
+	<div class="flex w-full max-w-2xl flex-col gap-2 rounded-md border-2 bg-gray-300 p-6">
+		<h2 class="font-semibold">Selected Result:</h2>
+		{#if searchResult}
 			{@const { item: selectedPerson, refIndex } = searchResult}
 			<div class="rounded-md bg-black p-4 font-mono text-sm text-white">
-				<p>{'{'} Item: {'{'} 
-					Name: <span class="text-lime-500">{selectedPerson.name}</span>, 
-					Age: <span class="text-amber-500">{selectedPerson.age}</span>, 
-					Role: <span class="text-cyan-400">{selectedPerson.role}</span>, 
-					Location: <span class="text-red-500">{selectedPerson.location}</span> 
-					{'}'}, RefIndex: {refIndex} {'}'}</p>
+				<p>
+					{'{'} Item: {'{'}
+					Name: <span class="text-lime-500">{selectedPerson.name}</span>, Age:
+					<span class="text-amber-500">{selectedPerson.age}</span>, Role:
+					<span class="text-cyan-400">{selectedPerson.role}</span>, Location:
+					<span class="text-red-500">{selectedPerson.location}</span>
+					{'}'}, RefIndex: {refIndex}
+					{'}'}
+				</p>
 			</div>
-			{/if}
-		</div>
+		{/if}
+	</div>
 </div>

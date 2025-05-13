@@ -41,7 +41,7 @@
 
 	const getValueByKey = (obj: any, key: string): any => {
 		return key.split('.').reduce((acc, part) => acc?.[part], obj);
-	}
+	};
 
 	const onKeyDown = (e: KeyboardEvent) => {
 		if (e.key === 'ArrowDown') {
@@ -57,7 +57,7 @@
 		} else if (e.key === 'Escape') {
 			reset();
 		}
-	}
+	};
 
 	const handleClickOutside = (event: MouseEvent) => {
 		const path = event.composedPath();
@@ -66,10 +66,10 @@
 		} else {
 			visible = true;
 		}
-	}
+	};
 </script>
 
-<svelte:window onkeydown={onKeyDown}  onclick={handleClickOutside}/>
+<svelte:window onkeydown={onKeyDown} onclick={handleClickOutside} />
 
 <section class={classes.section} bind:this={sectionRef}>
 	{#if label}
@@ -91,7 +91,14 @@
 		{#if results.length > 0 && visible}
 			<ul class={classes.ul} role="listbox">
 				{#each results as r, i}
-					<button type="button" onclick={() => {handleSelect(r); reset();}} class='size-full'>
+					<button
+						type="button"
+						onclick={() => {
+							handleSelect(r);
+							reset();
+						}}
+						class="size-full"
+					>
 						<li
 							class={current === i ? classes.li_selected : classes.li}
 							role="option"

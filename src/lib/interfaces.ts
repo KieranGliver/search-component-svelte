@@ -1,7 +1,7 @@
 export type SearchResult<T> = {
-    item: T;
-    refIndex: number;
-}
+	item: T;
+	refIndex: number;
+};
 
 export interface ClassOptions {
 	label: string;
