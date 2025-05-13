@@ -9,7 +9,7 @@ A flexible and reusable Svelte component implmenting Fuse.js to allow fuzzy sear
 In a svelte 5 project use
 
 ```bash
-npm install svelte-search-component
+npm install search-component-svelte
 ```
 
 ## Basic Usage
@@ -19,8 +19,8 @@ npm install svelte-search-component
 
 ```javascript
 <script lang="ts">
-	import { type SearchResult } from 'svelte-search-component/interfaces';
-	import { SearchBar } from 'svelte-search-component';
+	import { type SearchResult } from 'search-component-svelte/interfaces';
+	import { SearchBar } from 'search-component-svelte';
 
 	const data = ___YOUR___DATA___HERE___
 
