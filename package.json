@@ -67,5 +67,8 @@
 		"component",
 		"fuse.js",
 		"search"
-	]
+	],
+	"dependencies": {
+		"fuse.js": "^7.1.0"
+	}
 }
